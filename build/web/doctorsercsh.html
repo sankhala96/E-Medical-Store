@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="/lib/w3.js"></script>
+<body>
+
+
+
+
+
+
+<body>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+body{
+	background-image:url("c6.jpg");
+	background-repeat: no-repeat;
+	width:100%;
+}
+
+
+#container{
+	position:relative;
+	height: 500px;
+	width: 500px;
+	margin: 150px 400px;
+}
+
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+
+
+<script>
+$(document).ready(function(){
+    $("myTable").hover(function(){
+        $(this).hide();
+    });
+});
+</script>
+
+
+
+<div class="container" id="container">
+<h2>Search For the Doctors</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for doctors" title="Type in a name">
+
+ <table id="myTable">
+  <tr class="header">
+    <th style="width:60%;">Symptoms/keyword</th>
+    <th style="width:40%;">Specialists</th>
+  </tr>
+
+ <tr>
+	<td>breathing issues</td>       
+ <td><a href="ent.html">entspecialist</a></td>
+             </tr>
+  <tr class = "hidden">
+	<td>Severe and prolonged sore throat</td>
+    <td><a href="ent.html">entspecialist</a></td>
+</tr>
+
+<tr>
+	<td>difficulty swallowing</td>       
+ <td><a href="ent.html">entspecialist</a></td>
+             </tr>
+
+<tr>
+	<td>joint pain</td>       
+ <td><a href="ent.html">entspecialist</a></td>
+             </tr>
+
+
+<tr>
+	<td>Ear Pain/ache</td>       
+ <td><a href="ent.html">entspecialist</a></td>
+             </tr>
+
+<tr>
+	<td>Blood in saliva or phlegm</td>       
+ <td<a href="ent.html">entspecialist</a></td>
+             </tr>
+
+
+<tr>
+	<td>Lump in neck</td>       
+ <td><a href="ent.html">entspecialist</a></td>
+             </tr>
+
+<tr>
+	<td>Hidden: Rash</td>       
+ <td><a href="ent.html">entspecialist</a></td>
+             </tr>
+
+
+<tr>
+	<td>Hoarseness lasting over two weeks</td>       
+ <td><a href="ent.html">entspecialist</a></td>
+             </tr>
+
+
+
+<tr>
+  <td>Dental Issues</td>       
+ <td><a href="dentists.html">Dentist/Orthodontist</a></td>
+             </tr>
+  <tr>
+  <td>Gum Diseases</td>
+    <td><a href="dentists.html">Dentist/Orthodontist</a></td>
+</tr>
+
+<tr>
+  <td>Missing Teeth</td>       
+ <td><a href="dentists.html">Dentist/Orthodontist</a></td>
+             </tr>
+
+<tr>
+  <td>Sensitivity</td>       
+ <td><a href="dentists.html">Dentist/Orthodontist</a></td>
+             </tr>
+
+
+<tr>
+  <td>Dry mouth</td>       
+ <td><a href="dentists.html">Dentist/Orthodontist</a></td>
+             </tr>
+
+<tr>
+  <td>Oropharyngeal Cancer</td>       
+ <td><a href="dentists.html">Dentist/Orthodontist</a></td>
+             </tr>
+
+
+  <td>Hair related issues</td>       
+ <td><a href="homoe.html">Hair Specialist</a></td>
+             </tr>
+  <tr>
+  <td>Gray Hair</td>
+    <td><a href="homoe.html">Hair Specialist</a></td>
+</tr>
+
+<tr>
+  <td>Hair Loss</td>       
+ <td><a href="homoe.html">Hair Specialist</a></td>
+             </tr>
+
+<tr>
+  <td>Hair Damage</td>       
+ <td><a href="homoe.html">Hair Specialist</a></td>
+             </tr>
+
+
+<tr>
+  <td>Greasy Hair</td>       
+ <td><a href="homoe.html">Hair Specialist</a></td>
+             </tr>
+
+<tr>
+  <td>Hair Dryness</td>       
+ <td><a href="homoe.html">Hair Specialist</a></td>
+             </tr>
+
+
+<tr>
+  <td>Dandruff problem</td>       
+ <td><a href="homoe.html">Hair Specialist</a></td>
+             </tr>
+
+<tr>
+  <td>Skin Problems</td>       
+ <td><a href="dermatologists.html">Dermatologist</a></td>
+             </tr>
+
+
+<tr>
+  <td>Skin Problems</td>       
+ <td><a href="dermatologists.html">Dermatologist</a></td>
+             </tr>
+
+<tr>
+  <td>Skin Problems</td>       
+ <td><a href="dermatologists.html">Dermatologist</a></td>
+             </tr>
+
+<tr>
+  <td>Skin Problems</td>       
+ <td><a href="dermatologists.html">Dermatologist</a></td>
+             </tr>
+<tr>
+  <td>Skin Cancer</td>       
+ <td><a href="dermatologists.html">Dermatologist</a></td>
+             </tr>                         
+<tr>
+  <td>Lupus</td>       
+ <td><a href="dermatologists.html">Dermatologist</a></td>
+             </tr>
+<tr>
+  <td>Acne</td>       
+ <td><a href="dermatologists.html">Dermatologist</a></td>
+             </tr>
+<tr>
+  <td>Cold Sore</td>       
+ <td><a href="dermatologists.html">Dermatologist</a></td>
+             </tr>
+<tr>
+  <td>Vitiligo</td>       
+ <td><a href="dermatologists.html">Dermatologist</a></td>
+             </tr>                                                    
+
+<tr>
+  <td>Bone Osteoporosis</td>       
+ <td><a href="ortho.html">Orthopedic Trauma Specialist</a></td>
+             </tr>
+<tr>
+  <td>Bone Tumour</td>       
+ <td><a href="ortho.html">Orthopedic Trauma Specialist</a></td>
+             </tr>
+<tr>
+  <td>Bone Infection</td>       
+ <td><a href="ortho.html">Orthopedic Trauma Specialist</a></td>
+             </tr>
+<tr>
+  <td>Bone Leukemia</td>       
+ <td><a href="ortho.html">Orthopedic Trauma Specialist</a></td>
+             </tr>
+
+<tr>
+  <td>Bone Hypercalcemia</td>       
+ <td><a href="ortho.html">Orthopedic Trauma Specialist</a></td>
+            </tr>
+<tr>
+  <td>Bone Rickets</td>       
+ <td><a href="ortho.html">Orthopedic Trauma Specialist</a></td>
+             </tr>
+
+</table> 
+<center><a href ="Explore.jsp">Back</a></center>
+</div>
+
+
+</body>
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</html>

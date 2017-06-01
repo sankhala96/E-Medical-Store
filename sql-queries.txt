@@ -1,0 +1,7 @@
+create table userdata
+(userid varchar(10) primary key, password varchar(10), uname varchar(10),
+address varchar(15), mobile varchar(13));
+
+create table proddata
+(pcode int primary key, pname varchar(15), pdesc varchar(20),
+pcat varchar(10), price int);

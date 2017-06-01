@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Company Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }
+  .jumbotron {
+      background-color: #f4511e;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+.jumbotronn {
+
+      color: black;
+      padding: 30px 25px;
+	font-size:20px;
+      font-family: Montserrat, sans-serif;
+  }
+
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #black;
+      font-size: 50px;
+  }
+  .logo {
+      color: black;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+	max-height:280px;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #f4511e;
+  }
+  .carousel-indicators li {
+      border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+      background-color: #f4511e;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: black;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: blue !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+
+
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+  </style>
+</head>
+
+<style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<h2>web dispensary</h2>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="acne3.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="acne1.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="acne4.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#myPage">Web Dispensary\symptoms</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#Description">Description</a></li>
+        <li><a href="#symptoms">Symptoms</a></li>
+        <li><a href="#Experts">What Doctors recommend</a></li>
+        <li><a href="#natural">Natural ways to treat</a></li>
+
+</ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Container (About Section) -->
+<br>
+<div id="Description" class="container-fluid">
+  <div class="row">
+	<div class="col-sm-2">
+
+	</div>
+
+
+<div class="container">
+  <div class="jumbotronn" id="jumbotronn">
+ <div class="col-sm-8">
+
+      <h2> Description </h2>
+      <h4 style="text-align:center;"><strong>Acne</strong></h4>
+
+     <img src="acne1.jpg" style="width:100%">
+	<br><p>Acne, also known as acne vulgaris, is a long-term skin disease that occurs when hair follicles are clogged with dead skin cells and oil from the skin.</p>
+	<p>  It is characterized by blackheads or whiteheads, pimples, greasy skin, and possible scarring.</p>
+	<p> It primarily affects areas of the skin with a relatively high number of oil glands, including the face, upper part of the chest, and back.</p>
+
+	</div>
+	</div>
+    </div>
+    <div class="col-sm-2">
+
+    </div>
+  </div>
+</div>
+
+<div id="symptoms" class="container-fluid bg-grey">
+	<h2 style="text-align:center;">Symptoms</h2><br>
+  <div class="row">
+    <div class="col-sm-4">
+ <img src="acne2.jpg" style="width:100%";>
+    </div>
+    <div class="col-sm-8">
+      <h4><strong>How to know</strong></h4>
+	<ul>
+	<li>Whiteheads (closed plugged pores).</li>
+	<li>Blackheads (open plugged pores:the oil turns brown when it is exposed to air).</li>
+	<li>Small red, tender bumps (papules).</li>
+	<li>Pimples (pustules), which are papules with pus at their tips</li>
+	<li>Large, solid, painful lumps beneath the surface of the skin (nodules).</li>
+	<li>Painful, pus-filled lumps beneath the surface of the skin (cystic lesions).</li>
+</ul>
+	</div>
+</div>
+</div><>
+
+
+<!-- Container (doctors) -->
+<div id="Experts" class="container-fluid text-center bg-grey">
+    <h2>What doctors say</h2>
+
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+	<img src="acne5.jpg" style="width:100%";>
+        <h4>"Acne recur if you let yourself lose on diet, lifestyle or skin care regime."<br>" I realised that holistic approach is needed to get rid of pimples."<br><span>Dr.Surbhi, MD skin </span></h4>
+      </div>
+      <div class="item">
+        <img src="acne6.jpg" style="width:100%";>
+	<h4>"In order for acne to improve, people with acne must be gentle when touching their skin and use gentle products, such as those that are alcohol-free."<br><span>Dr.Friedrichs, American Academy of Dermatology</span></h4>
+      </div>
+      <div class="item">
+        <img src="acne7.jpg" style="width:100%";>
+	<h4>"Acne pimples are caused by bacteria and so to get rid of pimples you need acne skin care products that treat this germ."<br><span>Dr.Cynthia Bailey,M.D.</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+-----------------------------
+
+<!-- Container (Portfolio Section) -->
+<div id="natural" class="container-fluid text-center bg-grey">
+  <h2>Go Natural</h2><br>
+  <h4>Home Remedies</h4>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="acne9.jpg" alt="Paris" width="300" height="200">
+        <p><strong>Baking Soda</strong></p>
+        <p>Baking soda works as a gentle exfoliant for your skin. Thus,it unplugs the pores and removes dead skin.It also helps regulate the pH balance of the skin and has mild anti-inflammatory and antiseptic properties. All these characteristics make it an excellent home remedy for clearing acne.Apply a paste of one or two teaspoons of baking soda and a little water. Rinse it off after a few minutes.</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="acne10.jpg" alt="New York" width="400" height="300">
+        <p><strong>Lemon Juice</strong></p>
+        <p>The acidic property of lemons can be very useful in treating acne. Lemon will clean out dirt that has accumulated in the pores and will harden the sebum. You can use it on your skin daily but if it is too drying then use it every two or three days.Rub a slice of lemon on the affected area and leave it for a few hours before rinsing your face with water.</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="acne11.jpg" alt="San Francisco" width="400" height="300">
+        <p><strong>Aloe Vera Gel</strong></p>
+        <p>The soothing and anti-inflammatory properties in aloe vera can treat acne in a matter of a few days. Aloe vera gel is also helpful in healing the scars caused by acne.You can buy aloe vera gel from the market or get pure aloe vera gel by cutting a leaf off an aloe vera plant and squeezing the gel from the middle. Apply the aloe vera gel to the affected area twice daily.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<br><br><br><br>
+<!-- Footer / About Section -->
+<div class="jumbotron" id="jumbo">
+<footer class="w3-green w3-padding-64 w3-center" id="about">
+
+  <h2 style="text-align:center;">About</h2>
+
+    <div class="row">
+	<div class=col-sm-3>
+	<h4 > About us</h4>
+	<p> Web Dispensary is a e commerce website for drugs <br>, web consultation , articles , specialists<br>, so that you dont have to go out</p>
+      </div>
+    <div class="col-sm-3">
+      <h4> Why Us?</h4>
+      <p>	 we give drugs at subsidised prices<br> the articles are taken from real sources<br> and are risk free</p>
+    </div>
+    <div class="col-sm-3">
+      <h4> Useful links</h4>
+<p>
+<ul>
+	<li> our shop </li>
+	<li>gift cards</li>
+	<li>parteners</li>
+	<li>help</li>
+</p>
+</ul>
+ </div>
+
+</div>
+     <p>Powered By <a href="#" target="_blank" class="w3-hover-text-green">web dispensary</a></p>
+</footer>
+
+
+
+<center><a href ="Explore.jsp">Back</a></center>
+
+</body>
+</html>
